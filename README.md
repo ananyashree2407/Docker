@@ -20,3 +20,4 @@ git push origin main
 you can see the workflow of the application you have created in your github. 
 
 Depending on your application, you'll need to add specific deployment. This could involve SSH-ing into a server, deploying to a cloud service, or using Kubernetes.
+![image](https://github.com/ananyashree2407/Docker/assets/83506143/c5583ec3-1add-49fb-9380-d7ae648e67db)
