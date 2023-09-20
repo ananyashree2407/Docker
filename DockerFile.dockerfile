@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 FROM abc:latest
 # Use an official Python runtime as a parent image
 FROM python:3.11
@@ -14,8 +14,7 @@ RUN pip install -r requirements.txt
 
 # Run app.py when the container launches
 CMD ["python", "app.py"]
-=======
-<<<<<<< HEAD
+
 FROM abc:latest
 # Use an official Python runtime as a parent image
 FROM python:3.11
@@ -49,3 +48,23 @@ RUN pip install -r requirements.txt
 CMD ["python", "app.py"]
 >>>>>>> 80efa0b712787910b4781d395c81b75eeedcaf54
 >>>>>>> 24a881ad135ce1b5241b1bc97fde0d425ebd9897
+=======
+<<<<<<< HEAD
+FROM abc:latest
+# Use an official Python runtime as a parent image
+FROM python:3.11
+
+# Set the working directory to /app
+WORKDIR /app
+
+# Copy the current directory contents into the container at /app
+COPY . /app
+
+# Install any needed packages specified in requirements.txt
+RUN pip install -r requirements.txt
+
+# Run app.py when the container launches
+CMD ["python", "app.py"]
+
+
+>>>>>>> cf8f9c951acb289f0f229298c7658145d2825376

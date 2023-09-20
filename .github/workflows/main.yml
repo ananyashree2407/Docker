@@ -19,6 +19,6 @@ jobs:
         docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
         docker push your-image-name:latest
 
-    - name: Deploy to production (Replace with your deployment steps)
+    - name: Deploy to production 
       run: |
-        # Add deployment steps here, e.g., deploying to a server or Kubernetes cluster
+        docker run -d -p 3000:3000 your-image-name:latest
